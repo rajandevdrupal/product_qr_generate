@@ -1,0 +1,24 @@
+.sidebar .block {
+  background-color: unset !important;
+}
+.sidebar h2 {
+  border-bottom: unset !important;
+}
+fieldset {
+  border: 1px solid #000;
+}
+.layout-two-sidebars .main-content {
+  border-right-style: dotted;
+}
+.sidebar .block {
+  border-color: #000 !important;
+  border-width: 2px !important;
+}
+
+@media (min-width: 851px) {
+  .layout-two-sidebars .main-content {
+    width: 67% !important;
+    margin-right: 28% !important;
+    margin-left: 4% !important;
+}
+}

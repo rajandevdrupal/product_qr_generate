@@ -1,0 +1,4 @@
+product_qr_generate.custom_script:
+  css:
+    base:
+      css/product_qr_generate.css: {}

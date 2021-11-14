@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.product.field_image
+        - field.field.node.product.field_link
+        - field.field.node.product.body
+        - node.type.product
+    module:
+        - image
+        - link
+        - text
+        - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+    body:
+        label: hidden
+        type: text_summary_or_trimmed
+        weight: 101
+        settings:
+            trim_length: 600
+        third_party_settings: {  }
+    field_image:
+        type: image
+        weight: -1
+        region: content
+        settings:
+            image_style: medium
+            image_link: content
+        third_party_settings: {  }
+        label: hidden
+    links:
+        weight: 100
+hidden:
+    field_image: true

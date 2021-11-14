@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: app_link_branding
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: product_qr_generate_block
+settings:
+  id: product_qr_generate_block
+  label: 'To purchase this product on our app to avail exclusive app-only'
+  provider: product_qr_generate
+  label_display: '1'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      product: product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

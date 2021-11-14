@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.product.field_image
+        - field.field.node.product.field_link
+        - field.field.node.product.body
+        - node.type.product
+    module:
+        - image
+        - link
+        - text
+        - user
+id: node.product.default
+targetEntityType: node
+bundle: product
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_textarea_with_summary
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    field_link:
+        weight: 102
+        settings:
+            placeholder_url: ''
+            placeholder_title: ''
+        third_party_settings: {  }
+        type: link_default
+        region: content
+    field_image:
+        type: image_image
+        weight: 103
+        region: content
+        settings:
+            progress_indicator: throbber
+            preview_image_style: thumbnail
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

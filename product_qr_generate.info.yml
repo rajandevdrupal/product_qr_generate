@@ -1,0 +1,7 @@
+name: Product QR Generate
+description: Module for generating QR code from link
+core_version_requirement: ^8 || ^9
+package: Custom
+type: module
+dependencies:
+  - drupal:node

@@ -1,0 +1,8 @@
+{
+  "name": "rajandevdrupal/product_qr_generate",
+  "description": "This module will create a content type, 2 nodes and blocks with QR code",
+  "type": "drupal-module",
+  "require": {
+    "endroid/qrcode": "^4.4"
+  }
+}
